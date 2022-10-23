@@ -14,6 +14,7 @@ keypoints:
 # Pre-requisitos
 
 Por favor, complete este el procedimiento antes de tomar las lecciones. Siga los pasos que se indican a continuación para registrarse en una cuenta de Google Earth Engine y únase a nuestro repositorio compartido.
+
 <!--
 ### 1. Registrarse para obtener una cuenta en Google Earth Engine
 
