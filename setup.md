@@ -4,8 +4,34 @@ title: Setup
 ---
 
 > ## Datos
+> Para las lecciones de QGIS usaremos los datos de las cuencas hidrográficas del Perú que se puede descargar en [este enlace](https://downgit.github.io/#/home?url=https://github.com/hasencios/M1_MH_RMC_UNALM/blob/gh-pages/data/shp.rar)
+> y se debe de guardar en la carpeta `shp`
+>
 > Los datos usados en el desarrollo de las lecciones serán proporcinados a medida que avancemos en el tutorial a través de un archivo compartido en GEE o Google Drive.
+>
+> Para las lecciones de R y RStudio usaremos el archivo que podemos descargar en [este enlace](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/weecology/portal-teachingdb).  Luego se deberá
+> guardar el archivo en la carperta `data`
+> 
+> Tienes que descargar el archivo individualmente con los siguientes enlaces:
+>
+> - [gapminder_wide.csv](https://downgit.github.io/#/home?url=https://github.com/hasencios/M1_MH_RMC_UNALM/blob/gh-pages/data/gapminder_wide.csv)
 {: .prereq}
+
+
+
+> ## Software
+> [**R**](https://www.r-project.org/) es un lenguaje que, entre otras cosas, nos puede ayudar a realizar análisis estadísticos de series de tiempo hidrometeorológicas. Para este taller se debe de instalar lo siguiente:
+> * [R](https://cran.r-project.org/bin/windows/base/)
+> * [RStudio](https://rstudio.com/products/rstudio/download/)
+> * [RTools](https://cran.r-project.org/bin/windows/Rtools/)
+> 
+> [**Python**](http://python.org) es un lenguaje muy utilizado en
+> la computación científica y también es ideal para la programación de propósito general.
+> La instalación de todos los paquetes científicos individualmente puede ser
+> un poco difícil, por lo que recomendamos un instalador todo en uno.
+>
+> Para este taller utilizamos la versión 3.x.
+>
 
 <!--
 > ## Datos
