@@ -20,17 +20,13 @@ title: Setup
 
 
 > ## Software
+> [**QGIS**](https://www.qgis.org/en/site/) es una aplicación profesional de SIG (Sistema de Información Geofgráfica) que está construida sobre software libre y de código abierto. Nos permite realizar tareas de procesamiento, análisis, modelamiento, entre otros
+> para la toma de decisiones de los datos obtenidos del territorio y sus elementos que lo componen.
+>
 > [**R**](https://www.r-project.org/) es un lenguaje que, entre otras cosas, nos puede ayudar a realizar análisis estadísticos de series de tiempo hidrometeorológicas. Para este taller se debe de instalar lo siguiente:
 > * [R](https://cran.r-project.org/bin/windows/base/)
 > * [RStudio](https://rstudio.com/products/rstudio/download/)
 > * [RTools](https://cran.r-project.org/bin/windows/Rtools/)
-> 
-> [**Python**](http://python.org) es un lenguaje muy utilizado en
-> la computación científica y también es ideal para la programación de propósito general.
-> La instalación de todos los paquetes científicos individualmente puede ser
-> un poco difícil, por lo que recomendamos un instalador todo en uno.
->
-> Para este taller utilizamos la versión 3.x.
 {: .prereq}
 
 <!--
