@@ -31,7 +31,7 @@ title: Setup
 > un poco difícil, por lo que recomendamos un instalador todo en uno.
 >
 > Para este taller utilizamos la versión 3.x.
->
+> holaaaaaaaaaaaaaaaaaaaa
 
 <!--
 > ## Datos

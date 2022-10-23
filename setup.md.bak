@@ -32,18 +32,6 @@ title: Setup
 >
 > Para este taller utilizamos la versión 3.x.
 >
-> ### Paquetes de **Python** requeridos para este taller
->
-> * [Pandas](http://pandas.pydata.org/)
-> * [Jupyter notebook](http://jupyter.org/)
-> * [Numpy](http://www.numpy.org/)
-> * [Matplotlib](http://matplotlib.org/)
-> * [plotnine](https://github.com/has2k1/plotnine)
-{: .prereq}
-
-> ## Datos
-> Los datos usados en el desarrollo de las lecciones serán proporcinados a medida que avancemos en el tutorial a través de un archivo compartido en GEE o Google Drive.
-{: .prereq}
 
 <!--
 > ## Datos

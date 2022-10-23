@@ -3,7 +3,7 @@ layout: page
 title: "Contributor Code of Conduct"
 ---
 
-Los contribuyentes y mantenedores de este proyecto,
+Los contribuyentes de este proyecto,
 nos comprometemos a respetar a todas las personas que contribuyen a través de problemas de informes,
 publicar solicitudes de características,
 actualizar la documentación,
