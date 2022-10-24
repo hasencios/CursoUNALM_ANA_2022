@@ -11,6 +11,14 @@ objectives:
 keypoints:
 - "QGIS nos permite la visualización de información geoespacial que representa ciertas características de la realidad."
 ---
+## Objetivos del Módulo I
+
+Al finalizar el módulo cada alumno deberá de presentar mapas de las variables más importantes de su cuenca (precipitación, temperatura, LULC, clases de suelo, índices espectrales, etc), tal como se muestra a continuación:
+
+<figure>
+  <img src="../fig/DEM_Lurin.png" style="width:70%">
+</figure>
+
 ## Explorando Iri Data Library
 
 En esta sección accederemos a la base de datos del producto grillado [PISCO](https://www.tandfonline.com/doi/abs/10.1080/02626667.2019.1649411). Para ello, vamos a ingresar a la siguiente website:
