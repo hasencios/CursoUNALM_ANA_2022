@@ -58,11 +58,11 @@ Trabajaremos en la creación de un composite para una cuenca del Perú. La forma
 
 Hay tres maneras de obtener datos de vectores en GEE:
 
-  * [Cargar un shapefile](https://developers.google.com/earth-engine/importing) directamente a su carpeta personal *Asset* en el panel superior izquierdo. Puedes crear subcarpetas y establecer permisos para compartir según sea necesario. Utilizamos un archivo vectorial Asset en el [modulo Accediendo al catálogo de imágenes de satélite](https://hasencios.github.io/GEE_BASICO_SENAMHI/03-load-imagery/).
+  * [Cargar un shapefile](https://developers.google.com/earth-engine/importing) directamente a su carpeta personal *Asset* en el panel superior izquierdo. Puedes crear subcarpetas y establecer permisos para compartir según sea necesario. Utilizamos un archivo vectorial Asset en el [modulo Accediendo al catálogo de imágenes de satélite](https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/).
   * Utilizar un conjunto de datos de vectores existente en GEE. [Navegue por el catálogo de datos vectoriales aquí](https://developers.google.com/earth-engine/vector_datasets).
-  * Dibuje manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor. Haremos esto en el [Modulo de Clasificación Supervisada de Imágenes de Satélite](https://hasencios.github.io/GEE_BASICO_SENAMHI/05-classify-imagery/).
+  * Dibuje manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor. Haremos esto en el [Modulo de Clasificación Supervisada de Imágenes de Satélite](https://hasencios.github.io/CursoUNALM_ANA_2022/08-classify-imagery/).
 
-Aquí, usaremos un activo vectorial existente, el archivo de cuencas del Perú que ha sido cargado por el instructor como un Asset [aquí](https://github.com/hasencios/GEE_BASICO_SENAMHI/blob/gh-pages/data/Cuencas2012Peru.zip).
+Aquí, usaremos un activo vectorial existente, el archivo de cuencas del Perú que ha sido cargado por el instructor como un Asset [aquí](https://github.com/hasencios/CursoUNALM_ANA_2022/tree/gh-pages/data/shp.rar).
 
 
 Para cargar un archivo vectorial de sus Assets en su espacio de trabajo, necesitamos usar el "filepath" y lanzarlo a un tipo de datos `ee.FeatureCollection`. Lee más aquí: ["Managing Assets" in the Developer's Guide](https://developers.google.com/earth-engine/asset_manager#importing-assets-to-your-script).
@@ -236,7 +236,7 @@ Map.addLayer(composite, {bands: ['B4', 'B3', 'B2'], min: 0, max: 2000}, 'true co
 <br><br>
 
 ### Visualizar los resultados en un gráfico
-Para ilustrar brevemente la capacidad de GEE de generar gráficos, cargamos el producto de datos MODIS NDVI para trazar la serie temporal anual de NDVI medio de nuestra cuenca. La generación de gráficos también está cubierto en el [módulo 04 Reductores espaciales y temporales](https://hasencios.github.io/GEE_BASICO_SENAMHI/04-reducers/).
+Para ilustrar brevemente la capacidad de GEE de generar gráficos, cargamos el producto de datos MODIS NDVI para trazar la serie temporal anual de NDVI medio de nuestra cuenca. La generación de gráficos también está cubierto en el [módulo 07 Reductores espaciales y temporales](https://hasencios.github.io/CursoUNALM_ANA_2022/07-reducers/).
 
 {% highlight javascript %}
 
@@ -300,8 +300,8 @@ var ts = modis.map(function(image){
 // Exportar una tabla de fecha .csv, media NDVI para la cuenca
 Export.table.toDrive({
   collection: ts,
-  description: 'SENAMHI_2017_MODIS_NDVI_stats',
-  folder: 'GEE_SENAMHI',
+  description: '2017_MODIS_NDVI_stats',
+  folder: 'GEE_ANA',
   fileFormat: 'CSV'
 });
 
@@ -336,11 +336,11 @@ var ndvi = composite.select('NDVI');
 // (nota: hay que pulsar 'Run' en la pestaña de tareas en el panel superior derecho)
 Export.image.toDrive({
   image: ndvi,
-  description: 'SENAMHI_2017_L8_NDVI_image',
+  description: '2017_L8_NDVI_image',
   scale: 30,
   region: watershed.geometry().bounds(), // .geometry().bounds() needed for multipolygon
   crs: 'EPSG:32718',
-  folder: 'GEE_SENAMHI',
+  folder: 'GEE_ANA',
   maxPixels: 2000000000
 });
 
@@ -348,8 +348,8 @@ Export.image.toDrive({
 // (nota: hay que pulsar 'Run' en la pestaña de tareas en el panel superior derecho)
 Export.image.toAsset({
   image: ndvi,
-  description: 'SENAMHI_2017_L8_NDVI_image',
-  assetId: 'users/yourname/SENAMHI_2017_L8_NDVI_image',
+  description: '2017_L8_NDVI_image',
+  assetId: 'users/yourname/ANA_2017_L8_NDVI_image',
   scale: 30,
   region: watershed.geometry().bounds(),
   pyramidingPolicy: {'.default':'mean'}, // use {'.default':'sample'} for discrete data
