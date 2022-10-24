@@ -35,11 +35,11 @@ En el Módulo 03: Accediendo al Catálogo de Imágenes de Satélite, usamos un l
 Aquí demostraremos cómo aplicar un reductor temporal y espacial para obtener datos de precipitación anual por región del Perú.
 
 ### El catálogo de datos de GEE
-Un objetivo secundario de este ejercicio es utilizar GEE para acceder a bases de datos comunes almacenados en archivo que puedan resultar atractivos para quienes no estén directamente relacionados con el sensoramiento remoto. Como se describe en la [Introducción](https://hasencios.github.io/GEE_BASICO_SENAMHI/01-introduction/), GEE provee diferentes bases de datos pertinentes para los análisis de los sistemas terrestres. El archivo completo puede ser consultado [here](https://code.earthengine.google.com/datasets/). En este ejercicio, usaremos el [CHIRPS Daily: Climate Hazards Group InfraRed Precipitation with Station Data (version 2.0 final)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY) para obtener información de precipitaciones. CHIRPS es una base de datos de precipitaciones cuasi mundiales de más de 30 años (desde 1981-hasta la actualidad), que incorpora imágenes satelitales de 0.05° de resolución espacial con datos estaciones in situ para crear series temporales de grillas de precipitación para el análisis de tendencias y el monitoreo estacional de sequías.
+Un objetivo secundario de este ejercicio es utilizar GEE para acceder a bases de datos comunes almacenados en archivo que puedan resultar atractivos para quienes no estén directamente relacionados con el sensoramiento remoto. Como se describe en la [Introducción](https://hasencios.github.io/CursoUNALM_ANA_2022/02-introduction/), GEE provee diferentes bases de datos pertinentes para los análisis de los sistemas terrestres. El archivo completo puede ser consultado [here](https://code.earthengine.google.com/datasets/). En este ejercicio, usaremos el [CHIRPS Daily: Climate Hazards Group InfraRed Precipitation with Station Data (version 2.0 final)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY) para obtener información de precipitaciones. CHIRPS es una base de datos de precipitaciones cuasi mundiales de más de 30 años (desde 1981-hasta la actualidad), que incorpora imágenes satelitales de 0.05° de resolución espacial con datos estaciones in situ para crear series temporales de grillas de precipitación para el análisis de tendencias y el monitoreo estacional de sequías.
 
 ### Temporal Reducer: Generar un Image Statistics en el tiempo
 Tal como se discutió en el [módulo Accediendo al catálogo de imágenes de satélite
-](https://hasencios.github.io/GEE_BASICO_SENAMHI/03-load-imagery/), una `ImageCollection` es una pila o serie temporal de imágenes. Los reductores se usan para derivar una sola `Image` basada en la `ImageCollection`. Las operaciones ocurren en por píxeles. Seguiremos este flujo de trabajo:
+](https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/), una `ImageCollection` es una pila o serie temporal de imágenes. Los reductores se usan para derivar una sola `Image` basada en la `ImageCollection`. Las operaciones ocurren en por píxeles. Seguiremos este flujo de trabajo:
 
   * "Load" los datos de la GRIDMET como una `ImageCollection`
   * Filtrar la banda de datos de precipitaciones y las fechas deseadas
@@ -108,8 +108,8 @@ Ahora tomemos la imagen de la precipitación anual que acabamos de crear y obten
 
 #### Cargar los límites de países (Data Vectorial)
 
-Hay tres maneras de obtener datos de vectores en GEE, como se examina en el [módulo 03 Accediendo al catálogo de imágenes de satélite
-](https://hasencios.github.io/GEE_BASICO_SENAMHI/03-load-imagery/). Aquí usaremos una [existing asset of political regions boundaries](https://developers.google.com/earth-engine/importing) descargado del INEI del Perú.
+Hay tres maneras de obtener datos de vectores en GEE, como se examina en el [módulo 04 Accediendo al catálogo de imágenes de satélite
+](https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/). Aquí usaremos una [existing asset of political regions boundaries](https://developers.google.com/earth-engine/importing) descargado del INEI del Perú.
 
 {% highlight javascript %}
 // cargar regiones: data vectorial pública
@@ -165,7 +165,7 @@ polyOut = polyOut.map(function(feature){
 Export.table.toDrive({
   collection: polyOut,
   description: 'CHIRPS_annual_precip_by_region',
-  folder: 'GEE_SENAMHI',
+  folder: 'GEE_ANA',
   fileFormat: 'CSV'
 });       
 
@@ -183,6 +183,7 @@ Se ha añadido una nueva y útil función en la que se puede mantener el ratón 
 <br>
 <img src="../fig/04_runTaskN.png" border = "10" width="50%" height="50%">
 <br><br>
-
+<!--
 Enlace a una versión estática del script completo usado en este módulo:
 [https://code.earthengine.google.com/89436bb293b0dc412ed813499a820fe1](https://code.earthengine.google.com/89436bb293b0dc412ed813499a820fe1)
+-->
