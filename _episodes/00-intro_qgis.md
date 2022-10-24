@@ -37,7 +37,7 @@ Al finalizar el módulo cada alumno deberá de presentar mapas de las variables 
 Vamos a esplorar QGIS y cargadar el shapefile de cuencas hidrográficas que ya hemos descargado.
 
 <figure>
-  <img src="../fig/qGIS_Intro.png" style="width:100%">
+  <img src="../fig/00_QGIS_intro.png" style="width:100%">
 </figure>
 
 <br>
@@ -56,7 +56,7 @@ En esta sección accederemos a la base de datos del producto grillado [PISCO](ht
 ## Leyendo la base de datos descargada
 
 <figure>
-  <img src="../fig/00_QGIS_intro_PISCO.png" style="width:100%">
+  <img src="../fig/qGIS_Intro.png" style="width:100%">
 </figure>
 
 <br>
