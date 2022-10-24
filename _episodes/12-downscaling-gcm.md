@@ -22,6 +22,8 @@ La idea básica en este método es la de ajustar la distribución empírica de p
   <img src="../fig/12-mapeo_cuantil.png" style="width:40%">
 </figure>
 
+<!--
+
 Puede revisar la siguiente información para un mayor alcance:
 
 1. [Bias correction capabilities of quantile mapping methods for rainfall and temperature variables](https://iwaponline.com/jwcc/article-abstract/doi/10.2166/wcc.2020.261/74161/Bias-correction-capabilities-of-quantile-mapping?redirectedFrom=fulltext).
@@ -435,6 +437,7 @@ for (w in as.numeric(mask1$DN)) {
 
 <br>
 
+-->
 
 <!--
 

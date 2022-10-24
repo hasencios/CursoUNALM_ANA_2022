@@ -23,7 +23,7 @@ keypoints:
 
 GEE tiene un entorno de desarrollo integrado (IDE) llamado Editor de código. El Editor de código tiene varias características para ayudar a hacer más fácil la programación en este entorno que exploraremos en este tutorial. Para una descripción exhaustiva, véase el <a href="https://developers.google.com/earth-engine/playground#api-reference-docs-tab" target="_blank">Earth Engine Code Editor help page</a> en las guías de usuario de GEE. 
 
-
+<!--
 
 # Ejercicios: Explorando el Code Editor
 
@@ -94,8 +94,6 @@ Para colaborar de forma interactiva en el desarrollo de los scripts con otros us
 
 Usted debería de haber accedido al repositorio de scripts compartidos en el Code Editor con los siguientes pasos:
 
-<!-- 
-  - Únase al grupo de Google Earth Engine SENAMHI haciendo clic en este enlace. <a href="https://goo.gl/JsnWZH" target="_blank">https://goo.gl/JsnWZH</a> . No se preocupe por los permisos de publicación. -->
 - Acceder al repositorio compartido haciendo clic en este enlace: <a href="https://code.earthengine.google.com/?accept_repo=users/hasencios/CursoUNALM_ANA_2022" target="_blank">https://code.earthengine.google.com/?accept_repo=users/hasencios/CursoUNALM_ANA_2022</a>
 - En el Code Editor, vaya a la pestaña **Scripts** en el panel superior izquierdo, desplázate hacia abajo y expande la sección "Shared". Un directorio llamado *CursoUNALM_ANA_2022* debería aparecer con versiones de sólo lectura de los scripts completos de cada episodio.
 
@@ -287,6 +285,8 @@ Para instrucciones detalladas sobre Export, véase la <a href="https://developer
 
 <br>
 <br>
+-->
+
 <!--
 Enlace del código completo que usamos en esta lección:
 <a href="https://code.earthengine.google.com/1cbba818c21b948f0ae43ae3716e75ee" target="_blank">https://code.earthengine.google.com/1cbba818c21b948f0ae43ae3716e75ee</a>

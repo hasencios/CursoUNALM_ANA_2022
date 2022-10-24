@@ -22,22 +22,22 @@ keypoints:
 
 # Descripción general: Catálogo de imágenes satelitales a escala regional
 La mayoría de los productos satelitales se dividen en bloques para su distribución. Los datos globales de Landsat se dividen en escenas de ~180 km<sup>2</sup>, con identificadores únicos de path/row. *<a href="https://www.sciencedirect.com/science/article/abs/pii/S0034425715302194" target="_blank">Wulder et al. (2016)</a>* sugieren  que cada escena es fotografiada cada 16 días por Landsat 8 y cada 16 días por Landsat 7 (aproximadamente 45 veces al año). Los bordes de cada trayectoria se superponen, proporcionando una mayor frecuencia temporal en estas áreas. Sin embargo, los cielos nublados durante el paso de los satélites y otras anomalías de adquisición hacen que ciertas escenas o píxeles sean inutilizables.
-
+<!--
 
 <img src="../fig/03_worldLandsat.png" width="100%" height="100%" />
 <sub>*USGS Landsat archive holdings as of January 1, 2015 (Wulder et al. (2016)).*</sub>
 
 <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2013/76fuygfd.gif" width="100%" height="100%" />
 <sub>*Forest loss in Sumatra's Riau province, Indonesia, 2000-2012. Credit: Hansen, Potapov, Moore, Hancher et al., 2013*</sub>
--->
+
 <br>
-<!--**455 escenas de Landsat cubren los Estados Unidos:**-->
+
 <br>
 <img src="../fig/03_MeanderCutTumbesRiver.gif" border = "10">
 <br><br>
 
 <br>
-<!--**455 escenas de Landsat cubren los Estados Unidos:**-->
+
 <br>
 <img src="../fig/03_IlegalMiningAndMeanderMigration.gif" border = "10">
 <br><br>
@@ -59,9 +59,6 @@ Trabajaremos en la creación de un composite para una cuenca del Perú. La forma
 Hay tres maneras de obtener datos de vectores en GEE:
 
   * [Cargar un shapefile](https://developers.google.com/earth-engine/importing) directamente a su carpeta personal *Asset* en el panel superior izquierdo. Puedes crear subcarpetas y establecer permisos para compartir según sea necesario. Utilizamos un archivo vectorial Asset en el [modulo Accediendo al catálogo de imágenes de satélite](https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/).
- <!--
-  * Utilizar un conjunto de datos de vectores existente en GEE. [Navegue por el catálogo de datos vectoriales aquí](https://developers.google.com/earth-engine/vector_datasets).
- -->
   * Dibuje manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor. Haremos esto en el [Modulo de Clasificación Supervisada de Imágenes de Satélite](https://hasencios.github.io/CursoUNALM_ANA_2022/08-classify-imagery/).
 
 Aquí, usaremos un activo vectorial existente, el archivo de cuencas del Perú que ha sido cargado por el instructor como un Asset [aquí](https://github.com/hasencios/CursoUNALM_ANA_2022/tree/gh-pages/data/shp.rar).
@@ -359,6 +356,8 @@ Export.image.toAsset({
 });
 
 {% endhighlight %}
+-->
+
 <!--
 Se puede acceder a una versión estática del script aquí: [https://code.earthengine.google.com/8418ba2b48095a765720d79982bcfab7](https://code.earthengine.google.com/8418ba2b48095a765720d79982bcfab7)
 -->

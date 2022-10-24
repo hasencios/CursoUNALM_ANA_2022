@@ -22,6 +22,7 @@ keypoints:
 
 
 En Google Earth Engine (GEE), [reducers](https://developers.google.com/earth-engine/reducers_intro) se utilizan para agregar datos en el tiempo, el espacio y otras estructuras de datos. Pertenecen a la clase `ee.Reducer` e incluyen estadísticas de resumen, histogramas y regresión lineal, entre otros. Aquí se presenta una demostración visual que muestra un reductor aplicado a una `ImageCollection`:
+<!--
 
 <br>
 <img src="../fig/04_reducers.png" border = "10">
@@ -183,6 +184,8 @@ Se ha añadido una nueva y útil función en la que se puede mantener el ratón 
 <br>
 <img src="../fig/04_runTaskN.png" border = "10" width="50%" height="50%">
 <br><br>
+-->
+
 <!--
 Enlace a una versión estática del script completo usado en este módulo:
 [https://code.earthengine.google.com/89436bb293b0dc412ed813499a820fe1](https://code.earthengine.google.com/89436bb293b0dc412ed813499a820fe1)

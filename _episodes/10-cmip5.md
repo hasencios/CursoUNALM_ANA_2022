@@ -27,6 +27,8 @@ Python es un lenguaje interpretado que puede ser usado de dos formas:
 * Modo "Interactivo": cuando lo usas como una "calculadora avanzada" ejecutando
   un comando a la vez. Para iniciar Python en este modo, simplemente ejecuta `python`
   en la línea de comandos:
+  
+<!--
 
 ~~~
 $ python
@@ -802,3 +804,4 @@ Ahora que sabes cómo buscar y filtrar datos, practica con diferentes conjuntos 
 
 {% include links.md %}
 
+-->

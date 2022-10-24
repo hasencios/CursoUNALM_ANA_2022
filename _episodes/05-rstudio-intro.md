@@ -33,7 +33,7 @@ source: Rmd
 
 
 La ciencia es un proceso de varios pasos: una vez que hayas diseñado un experimento y recopilado datos, ¡comienza la verdadera diversión! Esta lección te enseñará cómo comenzar este proceso usando R y RStudio. Comenzaremos con datos brutos, realizaremos análisis exploratorios y aprenderemos a trazar gráficamente los resultados. Este ejemplo comienza con un conjunto de datos de [gapminder.org](https://www.gapminder.org) que contiene información sobre la población de muchos países a lo largo del tiempo. ¿Puedes leer estos datos en R? ¿Puedes hacer un gráfico de la población de Senegal? ¿Puedes calcular el ingreso promedio de los países del continente asiático? Al final de estas lecciones, ¡podrás hacer cosas como graficar datos de poblaciones de estos países en menos de un minuto!
-
+<!--
 
 ## Antes de empezar el taller 
 
@@ -911,3 +911,5 @@ R y RStudio tienen funcionalidad para administrar paquetes:
 {: .challenge}
 
 {% include links.md %}
+
+-->
