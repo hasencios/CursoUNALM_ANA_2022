@@ -4,6 +4,7 @@ teaching: 60
 exercises: 120
 questions:
 - "¿Cómo seleccionar las salidas de los modelos GCM-CMIP5 en GEE?"
+- "¿Cómo descargar las salidas de los modelos GCM-CMIP5 en GEE?"
 objectives:
 - "Cargar una base de datos previamente guardada como un Asset."
 - "Utilizar un reductor espacial para descargar las salidas de los GCM de nuestra cuenca de estudio."
