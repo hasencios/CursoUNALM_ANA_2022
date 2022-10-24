@@ -70,9 +70,9 @@ En 2016 el European Commission's Joint Research Centre publicó una base de dato
 El Oxford Malaria Atlas Project, el European Commission’s Joint Research Centre y la University of Twente se unieron para crear un mapa de los tiempos de viaje desde cualquier punto del mundo hasta el centro urbano más cercano. Este trabajo puede localizar áreas con poco acceso a servicios para informar los esfuerzos de salud pública y las decisiones políticas.
 
   - <a href="https://www.nature.com/articles/nature25181" target="_blank">A global map of travel time to cities to assess inequalities in accessibility in 2015</a> - El artículo original publicado en *Nature* que describe la distribución de los tiempos de viaje al área de densidad de población más cercana desde cualquier punto del globo.
-
+<!--
   - La <a href="https://map.ox.ac.uk/research-project/accessibility_to_cities/" target="_blank">website</a> publicado en conjunto con el artículo.
-
+-->
   - Algunos ejemplos <a href="https://code.earthengine.google.com/d52c656d3098b2723b275cc0d113d05e" target="_blank">GEE scripts</a> para visualizar la información.
 
 ***
