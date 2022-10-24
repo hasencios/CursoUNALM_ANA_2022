@@ -119,7 +119,7 @@ Aquí, estamos seleccionando todas las imágenes en el [Landsat 8 Surface Reflec
 
 {% highlight javascript %}
 // cargue todas las imágenes Landsat 8 SR dentro de los límites del polígono para el año 2017
-var l8collection = ee.ImageCollection('LANDSAT/LC08/C02/T1_L2')
+var l8collection = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
           .filterBounds(watershed)
           .filterDate('2017-01-01', '2017-12-31');
 print(l8collection);
