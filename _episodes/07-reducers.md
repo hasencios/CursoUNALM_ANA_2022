@@ -29,7 +29,7 @@ En Google Earth Engine (GEE), [reducers](https://developers.google.com/earth-eng
 
 Las reducciones también pueden ocurrir en el espacio, sobre las bandas dentro de una imagen, o sobre los atributos de una `FeatureCollection`. Ver el [Reducer Overview](https://developers.google.com/earth-engine/reducers_intro) en la Guía del Desarrollador de Google para más información.
 
-En el Módulo 03: Accediendo al Catálogo de Imágenes de Satélite, usamos un límite vectorial y un rango de fechas para filtrar una colección de imágenes, aplicamos un algoritmo (NDVI) sobre esa colección, y luego la redujimos a una imagen en la que cada valor de píxel era su máximo NDVI. Aquí seguimos el mismo flujo de trabajo, pero en su lugar reduciremos usando `imageCollection.sum()` para calcular la precipitación anual total para cada píxel a nivel global (reductores temporales). Luego daremos un paso más y usaremos el reductor espacial 'reduceRegions' para calcular la precipitación anual total para cada región del Perú.
+En el Módulo 05: Accediendo al Catálogo de Imágenes de Satélite, usamos un límite vectorial y un rango de fechas para filtrar una colección de imágenes, aplicamos un algoritmo (NDVI) sobre esa colección, y luego la redujimos a una imagen en la que cada valor de píxel era su máximo NDVI. Aquí seguimos el mismo flujo de trabajo, pero en su lugar reduciremos usando `imageCollection.sum()` para calcular la precipitación anual total para cada píxel a nivel global (reductores temporales). Luego daremos un paso más y usaremos el reductor espacial 'reduceRegions' para calcular la precipitación anual total para cada región del Perú.
 
 # Ejercicio: Obtener datos climáticos desde GEE
 Aquí demostraremos cómo aplicar un reductor temporal y espacial para obtener datos de precipitación anual por región del Perú.
@@ -108,7 +108,7 @@ Ahora tomemos la imagen de la precipitación anual que acabamos de crear y obten
 
 #### Cargar los límites de países (Data Vectorial)
 
-Hay tres maneras de obtener datos de vectores en GEE, como se examina en el [módulo 04 Accediendo al catálogo de imágenes de satélite
+Hay tres maneras de obtener datos de vectores en GEE, como se examina en el [módulo 05 Accediendo al catálogo de imágenes de satélite
 ](https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/). Aquí usaremos una [existing asset of political regions boundaries](https://developers.google.com/earth-engine/importing) descargado del INEI del Perú.
 
 {% highlight javascript %}
