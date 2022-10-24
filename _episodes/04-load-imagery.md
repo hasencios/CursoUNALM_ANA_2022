@@ -49,7 +49,7 @@ Aquí, aprovecharemos GEE para crear un composite que represente el pico de la t
 
 
 ### Image Collections
-Una pila o serie temporal de imágenes se llaman `Image Collections`. Cada fuente de datos disponible en GEE tiene su propia Image Collection y su propio ID (por ejemplo, el [Landsat 5 SR collection](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C01_T1_SR), o el producto [CHIRPS Daily: Climate Hazards Group InfraRed Precipitation with Station Data (version 2.0 final)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY). También se puede crear Image Collection a partir de imágenes individuales o fusionar colecciones existentes. Puede encontrar más información sobre las Image Collection [here in the GEE Developer's Guide](https://developers.google.com/earth-engine/ic_creating).
+Una pila o serie temporal de imágenes se llaman `Image Collections`. Cada fuente de datos disponible en GEE tiene su propia Image Collection y su propio ID (por ejemplo, el [Landsat 5 SR collection](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LT05_C02_T1_L2), o el producto [CHIRPS Daily: Climate Hazards Group InfraRed Precipitation with Station Data (version 2.0 final)](https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY). También se puede crear Image Collection a partir de imágenes individuales o fusionar colecciones existentes. Puede encontrar más información sobre las Image Collection [here in the GEE Developer's Guide](https://developers.google.com/earth-engine/ic_creating).
 
 Para generar imágenes que cubran grandes áreas espaciales y para llenar los vacíos de una imágen debido a las nubes, etc., podemos cargar una `ImageCollection` completa, pero filtrar la colección para devolver sólo los períodos de tiempo o las ubicaciones espaciales que sean de interés. Hay filtros de acceso directo para los que se utilizan comúnmente (imageCollection.filterDate(), imageCollection.filterBounds()...), pero pueden utilizarse la mayoría de los filtros de la sección `ee.Filter()` de la pestaña Docs. Más información sobre [filters on the Developer's Guide](https://developers.google.com/earth-engine/ic_filtering).
 
@@ -59,7 +59,9 @@ Trabajaremos en la creación de un composite para una cuenca del Perú. La forma
 Hay tres maneras de obtener datos de vectores en GEE:
 
   * [Cargar un shapefile](https://developers.google.com/earth-engine/importing) directamente a su carpeta personal *Asset* en el panel superior izquierdo. Puedes crear subcarpetas y establecer permisos para compartir según sea necesario. Utilizamos un archivo vectorial Asset en el [modulo Accediendo al catálogo de imágenes de satélite](https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/).
+ <!--
   * Utilizar un conjunto de datos de vectores existente en GEE. [Navegue por el catálogo de datos vectoriales aquí](https://developers.google.com/earth-engine/vector_datasets).
+ -->
   * Dibuje manualmente puntos, líneas y polígonos usando las herramientas de geometría del Code Editor. Haremos esto en el [Modulo de Clasificación Supervisada de Imágenes de Satélite](https://hasencios.github.io/CursoUNALM_ANA_2022/08-classify-imagery/).
 
 Aquí, usaremos un activo vectorial existente, el archivo de cuencas del Perú que ha sido cargado por el instructor como un Asset [aquí](https://github.com/hasencios/CursoUNALM_ANA_2022/tree/gh-pages/data/shp.rar).
@@ -111,13 +113,13 @@ Cuenca de interés: Mantaro
 
 
 ### Filtrar una Image Collection
-Aquí, estamos seleccionando todas las imágenes en el [Landsat 8 Surface Reflectance collection](https://code.earthengine.google.com/dataset/LANDSAT/LC08/C01/T1_SR) adquirido sobre nuestra cuenca de interés.
+Aquí, estamos seleccionando todas las imágenes en el [Landsat 8 Surface Reflectance collection](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2) adquirido sobre nuestra cuenca de interés.
 
 *Consejo: Los ID de las Image collection se encuentran en la barra de herramientas de "Search" en la parte superior del editor de códigos o a través de la búsqueda en el [data archive](https://code.earthengine.google.com/datasets/).*
 
 {% highlight javascript %}
 // cargue todas las imágenes Landsat 8 SR dentro de los límites del polígono para el año 2017
-var l8collection = ee.ImageCollection('LANDSAT/LC08/C01/T1_SR')
+var l8collection = ee.ImageCollection('LANDSAT/LC08/C02/T1_L2')
           .filterBounds(watershed)
           .filterDate('2017-01-01', '2017-12-31');
 print(l8collection);
@@ -236,7 +238,7 @@ Map.addLayer(composite, {bands: ['B4', 'B3', 'B2'], min: 0, max: 2000}, 'true co
 <br><br>
 
 ### Visualizar los resultados en un gráfico
-Para ilustrar brevemente la capacidad de GEE de generar gráficos, cargamos el producto de datos MODIS NDVI para trazar la serie temporal anual de NDVI medio de nuestra cuenca. La generación de gráficos también está cubierto en el [módulo 07 Reductores espaciales y temporales](https://hasencios.github.io/CursoUNALM_ANA_2022/07-reducers/).
+Para ilustrar brevemente la capacidad de GEE de generar gráficos, cargamos el producto de datos MODIS NDVI para trazar la serie temporal anual de NDVI medio de nuestra cuenca. La generación de gráficos también está cubierto en el [lección 08 Reductores espaciales y temporales](https://hasencios.github.io/CursoUNALM_ANA_2022/07-reducers/).
 
 {% highlight javascript %}
 
