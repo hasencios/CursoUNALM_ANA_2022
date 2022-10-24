@@ -36,7 +36,7 @@ GEE nos permite tener carpetas de grupo compartidas/repositorios para los script
   - Aceptar el repositorio compartido haciendo clic en este enlace:
   <a href="https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASIC_ANA
 " target="_blank">https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASIC_ANA</a>
-  - En el Code Editor, vaya al **Scripts tab** en el panel superior izquierdo, desplácese hacia abajo y amplíe la sección "Reader". Un directorio llamado *users/hasencios/GEE_BASICO_SENAMHI* debe aparecer con versiones de sólo lectura de los scripts completos de cada lección.
+  - En el Code Editor, vaya al **Scripts tab** en el panel superior izquierdo, desplácese hacia abajo y amplíe la sección "Reader". Un directorio llamado *users/hasencios/GEE_BASIC_ANA* debe aparecer con versiones de sólo lectura de los scripts completos de cada lección.
 
 
 ### 3. Tips de Javascript 

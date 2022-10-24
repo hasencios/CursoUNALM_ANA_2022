@@ -271,7 +271,7 @@ Además de usar todos los increíbles archivos de Google, los usuarios también 
 Cuando publiques en el foro, asegúrate de marcar la casilla "Anyone Can Read" en la ventana emergente de los recursos de intercambio para que todos los usuarios del foro puedan ejecutar tu código. Si tienes un Asset privado y no lo haces público, otras personas no podrán ejecutar tu código. Si no quieres compartir tus datos privados, puedes crear un ejemplo ficticio para compartir en los foros utilizando puntos o polígonos dibujados a mano.
 
 <br>
-<img src="../fig/02_sharingassetsN.png" border = "10">
+<img src="../fig/02_sharingassetsN_ANA.png" border = "10">
 <br><br>
 
 Para un ejemplo de script que utiliza datos importados, véase <a href="https://hasencios.github.io/GEE_BASICO_SENAMHI/06-time-series/" target="_blank">Leccion 06 Series de Tiempo</a>. Para obtener instrucciones detalladas de Google sobre cómo subir, compartir y administrar activos, consulte el <a href="https://developers.google.com/earth-engine/asset_manager" target="_blank">Assets Manager page</a> en el sitio web de GEE.
