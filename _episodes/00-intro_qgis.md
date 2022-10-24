@@ -16,20 +16,30 @@ keypoints:
 Al finalizar el módulo cada alumno deberá de presentar mapas de las variables más importantes de su cuenca (precipitación, temperatura, LULC, clases de suelo, índices espectrales, etc), tal como se muestra a continuación:
 
 <figure>
-  <img src="../fig/DEM_Lurin.png" style="width:70%">
+  <img src="../fig/DEM_Lurin.png" style="width:60%">
 </figure>
 
 <br>
 
 <figure>
-  <img src="../fig/landuse_lurin.png" style="width:70%">
+  <img src="../fig/landuse_lurin.png" style="width:60%">
 </figure>
 
 <br>
 
 <figure>
-  <img src="../fig/soil_lurin.png" style="width:70%">
+  <img src="../fig/soil_lurin.png" style="width:60%">
 </figure>
+
+## Explorando QGIS y leyendo información vectorial
+
+Vamos a esplorar QGIS y cargadar el shapefile de cuencas hidrográficas que ya hemos descargado.
+
+<br>
+
+<figure>
+  <img src="../fig/00_QGIS_intro.png" style="width:100%">
+</figure
 
 ## Explorando Iri Data Library
 
