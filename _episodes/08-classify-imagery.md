@@ -108,11 +108,11 @@ var training = composite.select(bands).sampleRegions({
 La `FeatureCollection` llamada **training** tiene el valor de reflectancia de cada banda almacenado para cada punto de entrenamiento junto con su etiqueta de clase.
 
 ### Entrenar el clasificador
-Ahora inicializaremos un `classifier` usando `ee.Classifier.randomForest()` y `train` en los datos de entrenamiento especificando las características a usar (entrenamiento), las categorías de la cobertura del suelo como `classProperty` en la que queremos categorizar las imágenes, y la reflectancia en B2 - B7 de las imágenes Landsat como las `inputProperties`.
+Ahora inicializaremos un `classifier` usando `ee.Classifier.smileRandomForest()` y `train` en los datos de entrenamiento especificando las características a usar (entrenamiento), las categorías de la cobertura del suelo como `classProperty` en la que queremos categorizar las imágenes, y la reflectancia en B2 - B7 de las imágenes Landsat como las `inputProperties`.
 
 {% highlight javascript %}
 // Haz un clasificador de Random Forest y entrénalo.
-var classifier = ee.Classifier.randomForest().train({
+var classifier = ee.Classifier.smileRandomForest(10).train({
   features: training,
   classProperty: 'landcover',
   inputProperties: bands
