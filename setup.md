@@ -17,12 +17,11 @@ title: Setup
 > - [gapminder_wide.csv](https://downgit.github.io/#/home?url=https://github.com/hasencios/M1_MH_RMC_UNALM/blob/gh-pages/data/gapminder_wide.csv)
 {: .prereq}
 
-
-
 > ## Software
 > [**QGIS**](https://www.qgis.org/en/site/) es una aplicación profesional de SIG (Sistema de Información Geofgráfica) que está construida sobre software libre y de código abierto. Nos permite realizar tareas de procesamiento, análisis, modelamiento, entre otros,
 > de los datos obtenidos del territorio y sus elementos que lo componen.
->
+{: .prereq}
+
 > [**R**](https://www.r-project.org/) es un lenguaje que, entre otras cosas, nos puede ayudar a realizar análisis estadísticos de series de tiempo hidrometeorológicas. Para este taller se debe de instalar lo siguiente:
 > * [R](https://cran.r-project.org/bin/windows/base/)
 > * [RStudio](https://rstudio.com/products/rstudio/download/)
