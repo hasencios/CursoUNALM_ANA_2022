@@ -1,6 +1,6 @@
 ---
 title: "Introducción a Google Earth Engine"
-teaching: 60
+teaching: 30
 exercises: 60
 questions:
 - "¿Qué es Google Earth Engine?"
