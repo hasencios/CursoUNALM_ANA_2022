@@ -274,14 +274,14 @@ Cuando publiques en el foro, asegúrate de marcar la casilla "Anyone Can Read" e
 <img src="../fig/02_sharingassetsN_ANA.png" border = "10">
 <br><br>
 
-Para un ejemplo de script que utiliza datos importados, véase <a href="https://hasencios.github.io/CursoUNALM_ANA_2022/09-time-series/" target="_blank">Leccion 09 Series de Tiempo</a>. Para obtener instrucciones detalladas de Google sobre cómo subir, compartir y administrar activos, consulte el <a href="https://developers.google.com/earth-engine/asset_manager" target="_blank">Assets Manager page</a> en el sitio web de GEE.
+Para un ejemplo de script que utiliza datos importados, véase <a href="https://hasencios.github.io/CursoUNALM_ANA_2022/09-time-series/" target="_blank">Leccion 10 Series de Tiempo</a>. Para obtener instrucciones detalladas de Google sobre cómo subir, compartir y administrar activos, consulte el <a href="https://developers.google.com/earth-engine/asset_manager" target="_blank">Assets Manager page</a> en el sitio web de GEE.
 
 
 
 #### Exportando y la pestaña Tasks
 En lugar de imprimir en la consola, para tareas más grandes puede que quieras exportar las salidas a tu Google Drive o Cloud Storage usando las funciones `Export` en tu código. Cuando se ejecutan, estas generan una nueva tarea en la pestaña `Task` en el panel superior derecho. Necesitarás entonces "Run" esta tarea para iniciar realmente la transferencia de información. Una vez que inicie una tarea, se le pedirá que introduzca los detalles sobre la resolución, tamaño, formato y destino si no lo incluyó en su código. Puedes pasar el ratón por encima de la tarea y hacer clic en el icono "?" para ver el estado y también para obtener el número de la tarea. Si tu tarea no se está ejecutando, puedes compartir este número como referencia en el foro de desarrolladores.
 
-Exportaremos información vectorial en <a href="https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/" target="_blank">Leccion 04 Cargar Imágenes</a> de este tutorial.
+Exportaremos información vectorial en <a href="https://hasencios.github.io/CursoUNALM_ANA_2022/04-load-imagery/" target="_blank">Leccion 05 Cargar Imágenes</a> de este tutorial.
 
 Para instrucciones detalladas sobre Export, véase la <a href="https://developers.google.com/earth-engine/exporting" target="_blank">Exporting Data page</a> en el sitio web de GEE. También presentaremos algunos ejemplos para exportar en módulos posteriores de este tutorial.
 
