@@ -19,9 +19,13 @@ Al finalizar el módulo cada alumno deberá de presentar mapas de las variables 
   <img src="../fig/DEM_Lurin.png" style="width:70%">
 </figure>
 
+<br>
+
 <figure>
   <img src="../fig/landuse_lurin.png" style="width:70%">
 </figure>
+
+<br>
 
 <figure>
   <img src="../fig/soil_lurin.png" style="width:70%">
