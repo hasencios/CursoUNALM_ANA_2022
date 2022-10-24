@@ -37,7 +37,7 @@ Al finalizar el módulo cada alumno deberá de presentar mapas de las variables 
 Vamos a esplorar QGIS y cargadar el shapefile de cuencas hidrográficas que ya hemos descargado.
 
 <figure>
-  <img src="../fig/00_QGIS_intro.png" style="width:70%">
+  <img src="../fig/00_QGIS_intro.png" style="width:100%">
 </figure>
 
 <br>
@@ -55,12 +55,11 @@ En esta sección accederemos a la base de datos del producto grillado [PISCO](ht
 
 ## Leyendo la base de datos descargada
 
-Comencemos con definir la ruta de nuestra carpeta de trabajo:
+<figure>
+  <img src="../fig/00_QGIS_intro_PISCO.png" style="width:100%">
+</figure>
 
-```r
-dir <- 'C:/directorio/de/trabajo/'
-setwd(dir)
-```
+<br>
 
 > ## Sugerencia
 >
@@ -73,37 +72,3 @@ setwd(dir)
 > * `/result`: donde guardemos los archivos y gráficos generados
 >
 {: .callout}
-
-## Instalando los paquetes necesarios para leer la base de datos
-
-Si no se tiene instalada la libreria `raster`, proceder como sigue a continuación:
-
-
-```r
-if (!require(raster)) install.packages("raster")
-library(raster)
-```
-## Leer el producto PISCO descargado (base de datos de precipitación mensual)
-
-Si no se tiene instalada la libreria `raster`, proceder como sigue a continuación:
-
-* Leer el archivo `netCDF`
-
-```r
-pr <- brick('../data/pr.nc')
-crs(pr) <- '+proj=longlat +datum=WGS84 +no_defs'
-plot(pr[[1]])
-```
-
-* Leer el shapefile de la cuenca de estudio
-
-```r
-mask <- shapefile('../shp/rimac.shp')
-plot(mask,add=T)
-```
-
-Deberíamos obtener algo como esto
-
-<figure>
-  <img src="../fig/08_pr.png" style="width:70%">
-</figure>
