@@ -235,7 +235,7 @@ Utiliza el inspector para hacer clic en los píxeles con diferentes niveles de v
 ## Extraer las series de tiempo para grandes regiones o puntos de interés
 
 Si estás calculando índices en este script, o tienes muchos puntos o áreas de interés, puedes tener la desagradable experiencia de que tu código se demora mucho. Una forma de evitarlo es exportar las series temporales como un .csv a Google Drive o Cloud Storage. Un ejemplo de cómo hacer esto se puede encontrar en
- [Módulo 07: Reductores espaciales y temporales](https://hasencios.github.io/CursoUNALM_ANA_2022/07-reducers/) de este tutorial.
+ [Módulo 08: Reductores espaciales y temporales](https://hasencios.github.io/CursoUNALM_ANA_2022/07-reducers/) de este tutorial.
 <!--
 Enlace a una versión estática del script completo utilizado en este módulo:
 [https://code.earthengine.google.com/c5d83beb8d7c31404517eb127f6a1e06](https://code.earthengine.google.com/c5d83beb8d7c31404517eb127f6a1e06)
