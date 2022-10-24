@@ -1,7 +1,7 @@
 ---
 title: "Code Editor en GEE"
-teaching: 60
-exercises: 60
+teaching: 30
+exercises: 30
 questions:
 - "¿Cuáles son las principales características del Code Editor?"
 - "¿En dónde podemos encontrar ayuda cuando estamos aprendiendo GEE?"

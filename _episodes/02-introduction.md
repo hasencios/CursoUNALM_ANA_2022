@@ -1,7 +1,7 @@
 ---
 title: "Introducción a Google Earth Engine"
 teaching: 30
-exercises: 60
+exercises: 30
 questions:
 - "¿Qué es Google Earth Engine?"
 - "¿Cuáles son las ventajas y limitaciones de esta plataforma?"
