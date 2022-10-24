@@ -34,8 +34,8 @@ GEE nos permite tener carpetas de grupo compartidas/repositorios para los script
   - Únase al grupo de Google Earth Engine SENAMHI haciendo clic en este enlace. <a href="https://goo.gl/JsnWZH" target="_blank">https://goo.gl/JsnWZH</a> . No se preocupe por los permisos de publicación.
  -->
   - Aceptar el repositorio compartido haciendo clic en este enlace:
-  <a href="https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASICO_SENAMHI
-" target="_blank">https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASICO_SENAMHI</a>
+  <a href="https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASIC_ANA
+" target="_blank">https://code.earthengine.google.com/?accept_repo=users/hasencios/GEE_BASIC_ANA</a>
   - En el Code Editor, vaya al **Scripts tab** en el panel superior izquierdo, desplácese hacia abajo y amplíe la sección "Reader". Un directorio llamado *users/hasencios/GEE_BASICO_SENAMHI* debe aparecer con versiones de sólo lectura de los scripts completos de cada lección.
 
 
