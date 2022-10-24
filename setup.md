@@ -4,7 +4,7 @@ title: Setup
 ---
 
 > ## Datos
-> Para las lecciones de QGIS usaremos los datos de las cuencas hidrográficas del Perú que se puede descargar en [este enlace](https://downgit.github.io/#/home?url=https://github.com/hasencios/M1_MH_RMC_UNALM/blob/gh-pages/data/shp.rar)
+> Para las lecciones de QGIS usaremos los datos de las cuencas hidrográficas del Perú que se puede descargar en [este enlace](https://downgit.github.io/#/home?url=https://github.com/hasencios/CursoUNALM_ANA_2022/tree/gh-pages/data/shp.rar)
 > y se debe de guardar en la carpeta `shp`
 >
 > Los datos usados en el desarrollo de las lecciones serán proporcinados a medida que avancemos en el tutorial a través de un archivo compartido en GEE o Google Drive.
@@ -14,7 +14,7 @@ title: Setup
 > 
 > Tienes que descargar el archivo individualmente con los siguientes enlaces:
 >
-> - [gapminder_wide.csv](https://downgit.github.io/#/home?url=https://github.com/hasencios/M1_MH_RMC_UNALM/blob/gh-pages/data/gapminder_wide.csv)
+> - [gapminder_wide.csv](https://downgit.github.io/#/home?url=https://github.com/hasencios/CursoUNALM_ANA_2022/blob/gh-pages/data/gapminder_wide.csv)
 {: .prereq}
 
 > ## Software
