@@ -1,7 +1,7 @@
 ---
 title: "Introducción a QGIS"
-teaching: 30
-exercises: 30
+teaching: 60
+exercises: 60
 questions:
 - ¿Cómo cargar información vectorial y raster en QGIS?
 - ¿Cómo crear información georreferenciada en QGIS?
@@ -70,5 +70,8 @@ En esta sección accederemos a la base de datos del producto grillado [PISCO](ht
 > * `/code`: donde guardemos los **scripts** que vayamos generando
 > * `/data`: donde almacenemos la base de datos que vamos a descargar 
 > * `/result`: donde guardemos los archivos y gráficos generados
+> * `/shp`: donde guardemos los vectoriales
+> * `/raster`: donde guardemos los archivos raster
+> * `/qgis`: donde guardemos el proyecto QGIS
 >
 {: .callout}
