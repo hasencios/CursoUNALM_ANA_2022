@@ -162,6 +162,7 @@ print('RF accuracy: ', classifier.confusionMatrix().accuracy());
 {% endhighlight %}
 
 Advertencia: En este ejemplo en particular, sólo estamos observando el `trainAccuracy`, que básicamente describe lo bien que el `classifier` fue capaz de etiquetar correctamente los datos de entrenamiento sustituidos, es decir, los datos que el `classifier` ya había reconocido. Para obtener una verdadera precisión de validación, necesitamos mostrarle al clasificador los nuevos datos de 'testing'. El script del repositorio tiene una sección extra al final que mantiene los datos para las pruebas, aplica el clasificador a los datos de las pruebas y evalúa la `errorMatrix` para estos datos de validación. El último ejemplo en el [Supervised Classification User Guide](https://developers.google.com/earth-engine/classification) también da un script ejemplo para este proceso.
-
+<!--
 Enlace al código completo que usamos en esta sesión:
 [https://code.earthengine.google.com/86b72b6fb9040967b66f09b17ce26c84](https://code.earthengine.google.com/86b72b6fb9040967b66f09b17ce26c84)
+-->
