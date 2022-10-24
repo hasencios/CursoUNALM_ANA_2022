@@ -39,7 +39,7 @@ Vamos a esplorar QGIS y cargadar el shapefile de cuencas hidrográficas que ya h
 <br>
 
 <figure>
-  <img src="../fig/00_QGIS_intro.png" style="width:100%">
+  <img src="../fig/00_QGIS_intro.png" style="width:70%">
 </figure
 
 <br>
