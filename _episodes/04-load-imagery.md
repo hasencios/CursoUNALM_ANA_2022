@@ -357,5 +357,6 @@ Export.image.toAsset({
 });
 
 {% endhighlight %}
-
+<!--
 Se puede acceder a una versión estática del script aquí: [https://code.earthengine.google.com/8418ba2b48095a765720d79982bcfab7](https://code.earthengine.google.com/8418ba2b48095a765720d79982bcfab7)
+-->
