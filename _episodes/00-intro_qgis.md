@@ -3,11 +3,12 @@ title: "Introducción a QGIS"
 teaching: 30
 exercises: 30
 questions:
-- ¿Cómo cargar información vectorial en QGIS?
-- ¿Cómo crear campos de información georreferenciada en QGIS?
+- ¿Cómo cargar información vectorial y raster en QGIS?
+- ¿Cómo crear información georreferenciada en QGIS?
 objectives:
-- Acceder a QGIS y cargar información vectorial
+- Acceder a QGIS y cargar información vectorial y raster
 - Generar campos para almacenar información de área y perimétro de un polígono
+- Crear un shapefile de puntos y determinar sus coordenadas
 keypoints:
 - "QGIS nos permite la visualización de información geoespacial que representa ciertas características de la realidad."
 ---
@@ -40,6 +41,8 @@ Vamos a esplorar QGIS y cargadar el shapefile de cuencas hidrográficas que ya h
 <figure>
   <img src="../fig/00_QGIS_intro.png" style="width:100%">
 </figure
+
+<br>
 
 ## Explorando Iri Data Library
 
