@@ -1,5 +1,5 @@
 ---
-title: "Series de Tiempo"
+title: "Series de Tiempo en GEE"
 teaching: 60
 exercises: 120
 questions:

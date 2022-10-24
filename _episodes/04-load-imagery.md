@@ -1,5 +1,5 @@
 ---
-title: "Accediendo al catálogo de imágenes de satélite"
+title: "Accediendo al catálogo de imágenes de satélite en GEE"
 teaching: 60
 exercises: 60
 questions:

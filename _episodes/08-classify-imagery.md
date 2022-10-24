@@ -1,5 +1,5 @@
 ---
-title: "Clasificación Supervisada de Imágenes de Satélite"
+title: "Clasificación Supervisada de Imágenes de Satélite en GEE"
 teaching: 60
 exercises: 120
 questions:

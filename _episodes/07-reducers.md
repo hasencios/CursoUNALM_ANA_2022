@@ -1,5 +1,5 @@
 ---
-title: "Reductores espaciales y temporales"
+title: "Reductores espaciales y temporales en GEE"
 teaching: 60
 exercises: 60
 questions:

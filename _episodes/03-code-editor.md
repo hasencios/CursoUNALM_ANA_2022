@@ -1,5 +1,5 @@
 ---
-title: "Code Editor"
+title: "Code Editor en GEE"
 teaching: 60
 exercises: 60
 questions:
