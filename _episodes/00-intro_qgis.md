@@ -36,11 +36,9 @@ Al finalizar el módulo cada alumno deberá de presentar mapas de las variables 
 
 Vamos a esplorar QGIS y cargadar el shapefile de cuencas hidrográficas que ya hemos descargado.
 
-<br>
-
 <figure>
   <img src="../fig/00_QGIS_intro.png" style="width:70%">
-</figure
+</figure>
 
 <br>
 
