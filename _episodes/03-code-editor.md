@@ -23,8 +23,6 @@ keypoints:
 
 GEE tiene un entorno de desarrollo integrado (IDE) llamado Editor de código. El Editor de código tiene varias características para ayudar a hacer más fácil la programación en este entorno que exploraremos en este tutorial. Para una descripción exhaustiva, véase el <a href="https://developers.google.com/earth-engine/playground#api-reference-docs-tab" target="_blank">Earth Engine Code Editor help page</a> en las guías de usuario de GEE. 
 
-<!--
-
 # Ejercicios: Explorando el Code Editor
 
 ## 1. Para empezar
@@ -285,7 +283,6 @@ Para instrucciones detalladas sobre Export, véase la <a href="https://developer
 
 <br>
 <br>
--->
 
 <!--
 Enlace del código completo que usamos en esta lección:
