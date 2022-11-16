@@ -100,8 +100,8 @@ vamos a instalar el espacio de trabajo necesario para descargar los GCM:
 
 ~~~
 conda config --prepend channels conda-forge
-conda config --append channels ConorIA
-conda create -n "gcm_unalm" "python>=3.7.1" ec3 esgf-pyclient matplotlib netCDF4 pandas requests "seaborn>=0.9.0"
+conda config --append channels claut
+conda create -n "gcm_unalm" ec3 esgf-pyclient matplotlib netCDF4 pandas requests "seaborn>=0.9.0" xarray
 ~~~
 {: .language-bash}
 
