@@ -32,9 +32,9 @@ title: Setup
 > [**Python**](http://python.org) es un lenguaje muy utilizado en
 > la computación científica y también es ideal para la programación de propósito general.
 > La instalación de todos los paquetes científicos individualmente puede ser
-> un poco difícil, por lo que recomendamos un instalador todo en uno.
+> un poco difícil, por lo que recomendamos un instalador todo en uno. 
 >
-> Para este taller utilizamos la versión 3.x.
+> Para este taller utilizamos la versión 3.x. Específicamente usaremos [Anaconda](https://www.anaconda.com/products/distribution) para las lecciones.
 >
 > ### Paquetes de **Python** requeridos para este taller
 >
