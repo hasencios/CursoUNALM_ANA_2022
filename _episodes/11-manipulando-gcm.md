@@ -28,8 +28,6 @@ Cada uno de los cuatro escenarios de RCP se desarrolló sobre la base de los esc
 
 Leer [The next generation of scenarios for climate change research and assessment](https://www.nature.com/articles/nature08823).
 
-<!--
-
 ## Explorando la información descarga de los GCM
 
 Ahora que hemos descargado las salidas de los GCMs, necesitamos saber cómo acceder a ellos y comenzar a analizarlos. En esta lección, seleccionaremos un subconjunto espacial y temporal de sus datos GCM que coincidan con su línea base climática observada, y comenzaremos a comprender el clima futuro. Al final de este lección, tendrás datos de más de al menos 5 GCMs para cada una de tus subcuencas. 
@@ -220,8 +218,6 @@ end_time - start_time
 {: .output}
 
 <br>
-
--->
 
 <!--
 

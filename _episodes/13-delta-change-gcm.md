@@ -20,8 +20,6 @@ Empezamos abriendo un **script** en RStudio y definir dónde se localiza el proy
 
 Comencemos con definir la ruta de nuestra carpeta de trabajo:
 
-<!--
-
 ## Instalando los paquetes necesarios para leer la base de datos
 
 Si no se tiene instalada la libreria `qmap, hydroTSM y ggplot2`, proceder como sigue a continuación:
@@ -152,7 +150,6 @@ p
 
 
 <br>
--->
 
 <!--
 

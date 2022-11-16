@@ -28,8 +28,6 @@ Python es un lenguaje interpretado que puede ser usado de dos formas:
   un comando a la vez. Para iniciar Python en este modo, simplemente ejecuta `python`
   en la línea de comandos:
   
-<!--
-
 ~~~
 $ python
 ~~~
@@ -803,5 +801,3 @@ for index, row in files.iterrows():
 Ahora que sabes cómo buscar y filtrar datos, practica con diferentes conjuntos de filtros, y luego completa los ejercicios, a continuación.
 
 {% include links.md %}
-
--->

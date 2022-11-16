@@ -21,8 +21,6 @@ keypoints:
 
 Este código permite a los usuarios generar gráficos de series de tiempo a partir de puntos que son elegidos dinámicamente en un mapa. Las series temporales muestran los compuestos de 16 días del Normalized Difference Vegetation Index (NDVI) y Enhanced Vegetation Index (EVI) con una resolución de 250 m. Estos índices se derivan de MODIS.
 
-<!--
-
 ## Definir especificaciones
 
 Este script está estructurado para facilitar al usuario la selección de diferentes imágenes, fechas y regiones. Para este ejercicio, vamos a dejar los parámetros tal como están para establecer la extensión como área de estudio en el Medio Oeste, la Cuenca Republican River Basin
@@ -236,7 +234,6 @@ Utiliza el inspector para hacer clic en los píxeles con diferentes niveles de v
 
 Si estás calculando índices en este script, o tienes muchos puntos o áreas de interés, puedes tener la desagradable experiencia de que tu código se demora mucho. Una forma de evitarlo es exportar las series temporales como un .csv a Google Drive o Cloud Storage. Un ejemplo de cómo hacer esto se puede encontrar en
  [Módulo 08: Reductores espaciales y temporales](https://hasencios.github.io/CursoUNALM_ANA_2022/07-reducers/) de este tutorial.
--->
 
 <!--
 Enlace a una versión estática del script completo utilizado en este módulo:
