@@ -517,7 +517,8 @@ Inicie su búsqueda creando un nuevo objeto `SearchConnection`. Aquí indicaremo
 
 ~~~
 # Iniciamos la conexión con el servidor
-conn = SearchConnection('https://esgf-node.llnl.gov/esg-search', distrib=True)
+facets='project,experiment_family'
+conn = SearchConnection('https://esgf-node.llnl.gov/esg-search', distrib=False)
 ~~~
 {: .language-python}
 
@@ -532,15 +533,14 @@ Nos interesan tres variables de temperatura y una de precipitación en este labo
 ~~~
 # Consulta del modelo CanESM2
 query = conn.new_context(
-    latest=True,
-    facets='null', 
     project='CMIP5',
     model='CanESM2',
     experiment='historical,rcp26,rcp45,rcp60,rcp85',
     variable='pr,prc,tas,tasmax,tasmin',
     time_frequency="mon",
     realm='atmos',
-    ensemble='r1i1p1')
+    ensemble='r1i1p1',
+    latest=True)
 ~~~
 {: .language-python}
 
@@ -559,7 +559,7 @@ print(len(results))
 {: .language-python}
 
 ~~~
-15
+4
 ~~~
 {: .output}
 
@@ -569,7 +569,7 @@ print(query.hit_count)
 {: .language-python}
 
 ~~~
-15
+4
 ~~~
 {: .output}
 
@@ -783,7 +783,7 @@ def download(url, filename):
 Ahora puedes descargar un archivo como el siguiente:
 
 ~~~
-download(files[0]['url'], files[0]['filename'])
+download(files.url[0], files.filename[0])
 ~~~
 {: .language-python}
 
