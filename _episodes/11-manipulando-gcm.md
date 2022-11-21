@@ -34,26 +34,20 @@ Ahora que hemos descargado las salidas de los GCMs, necesitamos saber cómo acce
 
 Empezamos, como siempre, comenzamos abriendo un **script** en RStudio, definir dónde se localiza el proyecto e importamos las bibliotecas que vamos a usar.
 
-Comencemos con definir la ruta de nuestra carpeta de trabajo:
-
-~~~
-dir <- 'C:/directorio/de/trabajo/'
-setwd(dir)
-~~~
-{: .language-r}
-
 ## Instalando los paquetes necesarios para leer la base de datos
 
 Si no se tiene instalada la libreria `lubridate, furrr y dplyr`, proceder como sigue a continuación:
 
 ~~~
 # Instalamos los paquetes que nos faltan
-if (!require(raster)) install.packages("lubridate")
-if (!require(raster)) install.packages("furrr")
-if (!require(raster)) install.packages("dplyr")
+install.packages("lubridate")
+install.packages("furrr")
+install.packages("dplyr")
+install.packages('ncdf4')
 
 # Cargamos los paquetes que vamos a usar en la lección
 library(raster)
+library(ncdf4)
 library(lubridate)
 library(furrr)
 library(dplyr)
@@ -70,6 +64,20 @@ getMean <- function(x,mask){
   TS <- raster::cellStats(x2, 'mean')
   return(TS)
 }
+~~~
+{: .language-r}
+
+Comencemos con definir la ruta de nuestra carpeta de trabajo:
+
+~~~
+projdir <- 'C:\\Users\\usuario\\OneDrive\\Escritorio\\CUENCA_MANTARO\\'
+dir.create(paste0(projdir,'result\\'))
+dir.create(paste0(projdir,'result\\prec'))
+dir.create(paste0(projdir,'result\\tmax'))
+dir.create(paste0(projdir,'result\\tmin'))
+dir <- paste0(projdir,'raster\\')
+setwd(dir)
+getwd()
 ~~~
 {: .language-r}
 
@@ -161,7 +169,7 @@ En este paso vamos a leer los `shapefiles` de nuestras subcuencas para estimar l
 
 ~~~
 # Leer el shapefile de nuestra cuenca de estudio
-mask1 <- shapefile('../raster/prepro_100m/RimacGeog.shp')
+mask1 <- shapefile('prepro_50m/watershedsGeo.shp')
 plot(mask1,add=T)
 ~~~
 {: .language-r}
@@ -199,10 +207,13 @@ for(i in 1:length(mask1)){
   
   # Guardamos la serie de tiempo
   if(var == 'pr'){
+    if(!file.exists(paste0('../result/prec/',w,'/'))) dir.create(paste0('../result/prec/',w,'/'))
     write.csv(x,paste0('../result/prec/',w,'/',substr(subset[wich],1,nchar(subset[wich])-3),'.csv'))
   }else if(var == 'tasmax'){
+    if(!file.exists(paste0('../result/tmax/',w,'/'))) dir.create(paste0('../result/tmax/',w,'/'))
     write.csv(x,paste0('../result/tmax/',w,'/',substr(subset[wich],1,nchar(subset[wich])-3),'.csv'))
   }else{
+    if(!file.exists(paste0('../result/tmin/',w,'/'))) dir.create(paste0('../result/tmin/',w,'/'))
     write.csv(x,paste0('../result/tmin/',w,'/',substr(subset[wich],1,nchar(subset[wich])-3),'.csv'))
   }
 }
